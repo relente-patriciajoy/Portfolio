@@ -1,0 +1,162 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #ffffff;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #2e2e2e;
+}
+
+.section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Playfair Display', serif;
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #2e2e2e;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-menu li a:hover {
+  background: #f7e6e9;
+  color: #b37b8e;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 100px 20px 80px;
+  background: #f6f3f1;
+}
+
+.hero-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #666;
+  font-style: italic;
+}
+
+.btn {
+  background: #e9c7cb;
+  color: #2e2e2e;
+  padding: 12px 28px;
+  border: 1px solid #d6b5bb;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #dfb8c0;
+  color: #000;
+}
+
+/* Scroll Offset Fix */
+#about,
+#hobbies,
+#works,
+#testimonials,
+#gallery,
+#contact,
+#goals,
+#comments {
+  scroll-margin-top: 100px;
+}
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    background-color: #fbe9ed;
+    gap: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: left 0.4s ease, opacity 0.3s ease;
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    left: 0;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  body.menu-open {
+    overflow: hidden;
+  }
+}
