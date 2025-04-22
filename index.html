@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patricia Joy Relente | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&
+     family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <button class="nav-toggle" id="navToggle">☰</button>
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#comments">Comments</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero" id="about">
+      <img src="images/pic.jpg" alt="Patricia Joy Relente" class="hero-img" />
+      <div class="hero-text">
+        <h1>Patricia Joy Relente</h1>
+        <p>Student at PUP Taguig - Aspiring Developer</p>
+        <a href="https://github.com/relente-patriciajoy" target="_blank" class="btn">View My GitHub</a>
+      </div>
+    </header>
+
+    <section id="hobbies" class="section">
+      <h2>My Interests & Hobbies</h2>
+      <ul class="card-list">
+        <li class="card">🎮 Playing online games</li>
+        <li class="card">🍳 Cooking</li>
+        <li class="card">📺 Watching TV</li>
+        <li class="card">📖 Reading</li>
+        <li class="card">🐱 Playing with my cat</li>
+      </ul>
+    </section>
+
+    <section id="works" class="section">
+      <h2>My Works</h2>
+      <ul class="card-list">
+        <li class="card"><a href="./works/empty1.html">Portfolio</a></li>
+        <li class="card"><a href="./works/empty2.html">ITC</a></li>
+        <li class="card"><a href="./works/empty3.html">Work 3</a></li>
+        <li class="card"><a href="./works/empty4.html">Work 4</a></li>
+        <li class="card"><a href="./works/empty5.html">Work 5</a></li>
+        <li class="card"><a href="./countries/index.html">Countries of the World</a></li>
+      </ul>
+    </section>
+
+    <section id="testimonials" class="section">
+      <h2>Testimonials</h2>
+      <div class="card">
+        <p>"Her leadership skills made our work organized." - Matthew</p>
+        <p>"Hardworking and punctual. She's a great team player." - Justine</p>
+        <p>"Patricia's dedication and teamwork made every project smoother." - Bea</p>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="images/Batzmaru.jpg" alt="Gallery 1" />
+        <img src="images/Kuromi.jpg" alt="Gallery 2" />
+        <img src="images/Pochaco.jpg" alt="Gallery 3" />
+        <img src="images/Pompompurin.jpg" alt="Gallery 4" />
+        <img src="images/Melody.jpg" alt="Gallery 5" />
+        <img src="images/Cinamoroll.jpg" alt="Gallery 6" />
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <input type="hidden" name="access_key" value="a704a823-525e-4ede-9fba-bce134ebd4c5">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <section id="goals" class="section">
+      <h2>My Goals</h2>
+      <ul class="card-list">
+        <li class="card">Enjoy life to the fullest</li>
+        <li class="card">Find peace</li>
+        <li class="card">Gain financial stability</li>
+        <li class="card">Have a great lifestyle</li>
+        <li class="card">Successful career</li>
+      </ul>
+    </section>
+
+    <section id="comments" class="section">
+      <h2>Comment Section</h2>
+      <form id="comment_form" class="comment-form">
+        <input type="text" id="comment_name" name="comment_name" placeholder="Your name" required>
+        <textarea id="comment_text" name="comment_text" placeholder="Write a comment" required></textarea>
+        <button type="submit" id="comment_btn">Comment</button>
+      </form>
+      <div id="all_comments"></div>
+    </section>
+
+    <footer>
+      <p>© 2025 Patricia Joy Relente. All rights reserved.</p>
+    </footer>
+
+    <script src="site.js"></script>
+  </body>
+</html>
