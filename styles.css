@@ -189,6 +189,36 @@ ul.card-list {
   transform: scale(1.03);
 }
 
+/* Testimonials Section */
+#testimonials {
+  background-color: #ffffff;
+}
+
+#testimonials h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2e2e2e;
+}
+
+#testimonials .card {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #f9f4f5;
+  border: 1px solid #ebd5db;
+  padding: 30px;
+  font-style: italic;
+  color: #5e3d4a;
+  line-height: 1.6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+#testimonials .card p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 /* Scroll Offset Fix */
 #about,
 #hobbies,
