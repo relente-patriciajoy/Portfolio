@@ -115,6 +115,46 @@ h2 {
   color: #000;
 }
 
+/* Interests / Hobbies Section */
+#hobbies {
+  background-color: #fdf8f8;
+}
+
+#hobbies h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2e2e2e;
+}
+
+ul.card-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: #fff9fa;
+  border: 1px solid #f3d9de;
+  border-radius: 14px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
 /* Scroll Offset Fix */
 #about,
 #hobbies,
