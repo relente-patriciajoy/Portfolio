@@ -258,6 +258,25 @@ ul.card-list {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
+/* Testimonial Avatar & Name */
+.testimonial-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-name {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #a35d77;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.95rem;
+}
+
 .testimonial-card:hover {
   transform: translateY(-5px);
 }
