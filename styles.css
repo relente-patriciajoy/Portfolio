@@ -121,7 +121,8 @@ h2 {
 #testimonials h2,
 #gallery h2,
 #contact h2,
-#goals h2 {
+#goals h2,
+#comments h2 {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 40px;
@@ -130,20 +131,7 @@ h2 {
   color: #2e2e2e;
 }
 
-/* Interests / Hobbies Section */
-#hobbies {
-  background-color: #fdf8f8;
-}
-
-#hobbies h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #2e2e2e;
-}
-
+/* Interest and Hobbies Section*/
 ul.card-list {
   list-style: none;
   padding: 0;
@@ -175,15 +163,6 @@ ul.card-list {
   background-color: #faf6f7;
 }
 
-#works h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #2e2e2e;
-}
-
 #works ul.card-list li a {
   display: block;
   background-color: #fff;
@@ -209,15 +188,6 @@ ul.card-list {
   background-color: #ffffff;
 }
 
-#testimonials h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #2e2e2e;
-}
-
 #testimonials .card {
   max-width: 700px;
   margin: 0 auto;
@@ -237,15 +207,6 @@ ul.card-list {
 /* Gallery Section */
 #gallery {
   background-color: #fefcfc;
-}
-
-#gallery h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #2e2e2e;
 }
 
 .gallery {
@@ -318,7 +279,102 @@ ul.card-list {
   background: #dfb8c0;
 }
 
-/* Scroll Offset Fix */
+/* === Goals Section === */
+#goals {
+  background-color: #fff8fa;
+}
+
+#goals ul.card-list li {
+  background: #fff;
+  border: 1px solid #f1d2da;
+  padding: 16px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #814c61;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+#goals ul.card-list li:hover {
+  background: #fbe7ef;
+  color: #3a2b2d;
+}
+
+/* === Comment Section === */
+#comments {
+  background-color: #fff9fc;
+  padding-bottom: 100px;
+}
+
+.comment-form {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #fff;
+  border: 1px solid #f2d9e1;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.comment-form input,
+.comment-form textarea {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e7bccb;
+}
+
+.comment-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.comment-form button {
+  background: #e9c7cb;
+  color: #2e2e2e;
+  border: 1px solid #d6b5bb;
+  border-radius: 30px;
+  padding: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.comment-form button:hover {
+  background: #dfb8c0;
+}
+
+#all_comments {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+#all_comments .comment {
+  background: #fff;
+  border: 1px solid #f2d9e1;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#all_comments .comment p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+#all_comments .comment small {
+  color: #a79da5;
+}
+
+/* === Scroll Offset Fix === */
 #about,
 #hobbies,
 #works,
@@ -330,7 +386,7 @@ ul.card-list {
   scroll-margin-top: 100px;
 }
 
-/* Mobile Navbar */
+/* === Mobile Navbar === */
 @media (max-width: 768px) {
   .nav-toggle {
     display: block;
