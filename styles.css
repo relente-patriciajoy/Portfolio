@@ -226,9 +226,27 @@ ul.card-list {
 /* Testimonials Section */
 #testimonials {
   background-color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
 }
 
-#testimonials .card {
+#testimonials h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2e2e2e;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.testimonial-card {
   max-width: 700px;
   margin: 0 auto;
   background: #f9f4f5;
@@ -240,7 +258,11 @@ ul.card-list {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
-#testimonials .card p:not(:last-child) {
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+#testimonial-card p:not(:last-child) {
   margin-bottom: 20px;
 }
 
