@@ -64,25 +64,30 @@
 
     <section id="testimonials" class="section">
       <h2>Testimonials</h2>
-      <div class="testimonial-wrapper">
-        <div class="testimonial-card">
-          <img src="images/mat.jpg" alt="Matthew"
-            class="testimonial-avatar">
-          <p>"Her leadership skills made our work organized."</p>
-          <span class="testimonial-name">— Matthew</span>
+
+      <div class="testimonial-carousel">
+        <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial-card">
+            <img src="images/mat.jpg" alt="Matthew" class="testimonial-avatar">
+            <p>"Her leadership skills made our work organized."</p>
+            <span class="testimonial-name">— Matthew</span>
+          </div>
+          <div class="testimonial-card">
+            <img src="images/tine.jpg" alt="Justine" class="testimonial-avatar">
+            <p>"Hardworking and punctual. She's a great team player."</p>
+            <span class="testimonial-name">— Justine</span>
+          </div>
+          <div class="testimonial-card">
+            <img src="images/bea.jpg" alt="Bea" class="testimonial-avatar">
+            <p>"Patricia's dedication & teamwork made every project smoother."</p>
+            <span class="testimonial-name">— Bea</span>
+          </div>
         </div>
-        <div class="testimonial-card">
-          <img src="images/tine.jpg" alt="Justine"
-            class="testimonial-avatar">
-          <p>"Hardworking and punctual. She's a great team player."</p>
-          <span class="testimonial-name">— Justine</span>
-        </div>
-        <div class="testimonial-card">
-          <img src="images/bea.jpg" alt="Bea"
-            class="testimonial-avatar">
-          <p>"Patricia's dedication & teamwork made every project smoother."</p>
-          <span class="testimonial-name">— Bea</span>
-        </div>
+      </div>
+
+      <div class="carousel-buttons">
+        <button onclick="moveTestimonial(-1)">Prev</button>
+        <button onclick="moveTestimonial(1)">Next</button>
       </div>
     </section>
 

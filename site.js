@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  //Navbar Toggle
+  // Navbar Toggle
   const toggle = document.getElementById('navToggle');
   const navList = document.querySelector('.nav-menu');
 
@@ -15,4 +15,19 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.classList.remove('menu-open');
     });
   });
+
+  // Testimonial Carousel
+  let index = 0;
+  const track = document.getElementById('testimonialTrack');
+
+  if (track) {
+    const total = track.children.length;
+
+    window.moveTestimonial = function (direction) {
+      index += direction;
+      if (index < 0) index = total - 1;
+      if (index >= total) index = 0;
+      track.style.transform = `translateX(-${index * 100}%)`;
+    };
+  }
 });
