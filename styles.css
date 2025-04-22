@@ -14,7 +14,7 @@ h2 {
 
 .section {
   padding: 80px 20px;
-  max-width: 1200px;
+  max-width: 100%;
   margin: auto;
   text-align: center;
 }
@@ -161,6 +161,9 @@ ul.card-list {
 /* My Works Section */
 #works {
   background-color: #faf6f7;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 #works ul.card-list li a {
