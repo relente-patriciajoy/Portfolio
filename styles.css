@@ -197,7 +197,7 @@ ul.card-list {
 
 /* My Works Section */
 #works {
-  background-color: #faf6f7;
+  background-color: #fff9fc;
   width: 100%;
   box-sizing: border-box;
   margin: 0;
@@ -225,50 +225,47 @@ ul.card-list {
 
 /* Testimonials Section */
 #testimonials {
-  background-color: #ffffff;
+  background-color: #f9f5f6;
   padding: 80px 20px;
   text-align: center;
 }
 
 #testimonials h2 {
+  font-family: 'Playfair Display', serif;
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 40px;
-  text-transform: uppercase;
   letter-spacing: 1px;
-  color: #2e2e2e;
+  color: #703d57;
 }
 
 .testimonial-card {
   min-width: 100%;
   box-sizing: border-box;
-  background: #f9f4f5;
-  border: 1px solid #ebd5db;
-  padding: 30px 20px;
+  background: #fefcfc;
+  border: 1px solid #f0dfe5;
+  padding: 30px 25px;
   font-style: italic;
-  color: #5e3d4a;
-  line-height: 1.6;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
   text-align: center;
 }
 
 /* Testimonial Avatar & Name */
 .testimonial-avatar {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  order: 3px solid #f3c6d2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .testimonial-name {
-  display: block;
-  margin-top: 15px;
   font-weight: 600;
-  color: #a35d77;
   font-family: 'Playfair Display', serif;
+  color: #b45b7c;
   font-size: 0.95rem;
 }
 
@@ -276,8 +273,12 @@ ul.card-list {
   transform: translateY(-5px);
 }
 
-#testimonial-card p:not(:last-child) {
-  margin-bottom: 20px;
+#testimonial-card p {
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #5e3d4a;
+  line-height: 1.6;
+  margin-bottom: 10px;
 }
 
 /* Testimonial Carousel */
@@ -286,6 +287,7 @@ ul.card-list {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  border-radius: 16px;
 }
 
 .testimonial-track {
@@ -304,16 +306,19 @@ ul.card-list {
   background: #f4d0dc;
   color: #2e2e2e;
   border: none;
-  padding: 10px 16px;
+  padding: 10px 18px;
   border-radius: 30px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
+  font-size: 0.95rem;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .carousel-buttons button:hover {
   background: #eabccc;
+  transform: translateY(-2px);
 }
 
 /* Gallery Section */
